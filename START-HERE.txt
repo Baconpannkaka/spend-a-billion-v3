@@ -1,0 +1,30 @@
+SPEND A BILLION V3 — REN GITHUB PAGES-VERSION
+
+Detta paket är komplett. Inga patchfiler ska behövas.
+
+LADDA UPP TILL ETT NYTT, TOMT REPOSITORY
+1. Packa upp zip-filen.
+2. Öppna mappen spend-a-billion-v3-complete.
+3. Markera ALLT INNE I MAPPEN — inte själva mappen.
+4. Dra filerna och mapparna till GitHub: Add file > Upload files.
+5. Kontrollera innan Commit changes att följande syns i uppladdningen:
+   - package.json
+   - package-lock.json
+   - src/types/index.ts
+   - src/lib/site.ts
+   - .github/workflows/pages.yml
+6. Commit changes till main.
+7. Gå till Settings > Pages och välj GitHub Actions.
+8. Gå till Actions och kör workflowet om det inte redan startat.
+
+VIKTIGT
+- De stora produktkatalogerna ligger inte i zip-filen. De skapas automatiskt
+  av npm run verify/build i GitHub Actions.
+- Ladda inte upp i ett gammalt repository. Använd ett nytt tomt repository.
+- package.json och package-lock.json ska ligga direkt i repositoryts rot.
+
+LOKALA KOMMANDON
+npm ci
+npm run dev
+npm run verify
+npm run build
